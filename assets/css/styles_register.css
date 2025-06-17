@@ -1,17 +1,35 @@
 body {
-  background-color: #fdeeee;
+  background-color: #1f2937;
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main-content {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.register-container {
+  background: #fff0f0;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  color: #4b2e20;
+  text-align: center;
 }
 
 .login-container {
   background: #fff0f0;
   padding: 30px;
   border-radius: 8px;
-  width: 300px;
+  width: 500px;
   text-align: center;
   color: #4b2e20;
 }
