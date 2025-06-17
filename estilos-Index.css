@@ -1,0 +1,152 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f2d1;
+  color: #1e1e1e;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f9f2d1;
+  border-bottom: 2px solid #1e1e1e;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #1e1e1e;
+  font-weight: bold;
+  background: #d9cbb0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+
+nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff6d5;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+nav .dropdown-menu a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+.hero.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  max-width: 400px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text button {
+  background-color: transparent;
+  border: 1px solid #1e1e1e;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hero-imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.section.container {
+  padding: 2rem;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.products, .discounts {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.product {
+  flex: 1;
+  min-width: 200px;
+}
+
+.subscribe-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #1e1e1e;
+  border-radius: 4px;
+}
+
+.subscribe-form button {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+footer.footer {
+  background-color: #f9f2d1;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #1e1e1e;
+}
+
+footer.footer h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+footer.footer p {
+  font-size: 0.9rem;
+  color: #555;
+}
