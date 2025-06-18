@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Regístrate</title>
-  <link rel="stylesheet" href="Styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/estilos-Index.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 </head>
+
 <body>
+
+  <header>
+    <div class="logo"><img src="assets/img/logo.png" width="150" height="100"> </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#carrito">Carrito</a>
+      <a href="Register.html" id="registro">Registrarse</a>
+      <a href="login.html" id=" login">Iniciar sesión</a>
+      <div class="dropdown">
+        <a href="#">☰</a>
+        <div class="dropdown-menu">
+          <a href="index.html">Inicio</a>
+          <a href="#productos">Productos</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+          <a href="#promocion">Promoción</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="acercade.html" target="_blank">Acerca de Nosotros</a>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
   <div class="register-container">
     <h2>Regístrate</h2>
     <form id="registerForm">
@@ -14,12 +43,64 @@
       <input type="text" id="apellido" placeholder="Apellido" required>
       <input type="email" id="email" placeholder="Email" required>
       <input type="password" id="password" placeholder="Contraseña" required>
-      
+
       <button id="submitBtn" type="submit" disabled>Regístrate</button>
     </form>
     <p class="login-link">¿Ya eres miembro? <a href="index.html">Inicia tu sesión</a></p>
   </div>
 
-  <script src="Register.js"></script>
+  <footer class="bg-white text-center py-5">
+    <div class="container">
+      <h2 class="mb-4 fw-bold">NovaTienda</h2>
+      <p class="mb-4">Moda con estilo para cada ocasión. Encuentra tu look ideal con nosotros.</p>
+
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-3">
+          <h5 class="fw-bold">Contacto</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt me-2"></i>Bogotá, Colombia</li>
+            <li><i class="fas fa-phone me-2"></i><a href="tel:057-320-202-02-02">057-320-202-02-02</a></li>
+            <li><i class="fas fa-envelope me-2"></i><a href="mailto:info@novatienda.com">info@novatienda.com</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="fw-bold">Productos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Sombreros</a></li>
+            <li><a href="#">Hamacas</a></li>
+            <li><a href="#">Platería</a></li>
+            <li><a href="#">Decoración</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="fw-bold">Navegación</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acercade.html">Acerca de</a></li>
+            <li><a href="compras.html">Compras</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h5 class="fw-bold">Síguenos</h5>
+        <a class="text-dark mx-2" href="https://facebook.com/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+        <a class="text-dark mx-2" href="https://instagram.com/" target="_blank"><i
+            class="fab fa-instagram fa-lg"></i></a>
+        <a class="text-dark mx-2" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        <a class="text-dark mx-2" href="https://pinterest.com/" target="_blank"><i
+            class="fab fa-pinterest fa-lg"></i></a>
+      </div>
+
+      <div class="text-muted small">
+        &copy; 2025 NovaTienda. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/register.js"></script>
 </body>
+
 </html>
