@@ -1,7 +1,9 @@
+
 body {
-  background-color: #fef3c7;
-  font-family: 'Arial', sans-serif;
-  color: #1f2937;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f2d1;
+  color: #1e1e1e;
 }
 
 header {
@@ -65,7 +67,7 @@ nav .dropdown-menu a {
 }
 
 .hero-text h1 {
-  font-size: 4rem;
+  font-size: 8rem;
   margin-bottom: 1rem;
   color: #1e1e1e;
 }
@@ -87,7 +89,8 @@ nav .dropdown-menu a {
 .hero-imgs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 2rem;
+  align-items: center;
 }
 
 .section.container {
@@ -103,11 +106,19 @@ nav .dropdown-menu a {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .product {
   flex: 1;
   min-width: 200px;
+  
+}
+
+fieldset {
+  border: 1px solid #1e1e1e;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .subscribe-form form {
@@ -135,12 +146,12 @@ nav .dropdown-menu a {
 footer.footer {
   background-color: #f9f2d1;
   text-align: center;
-  padding: 2rem 1rem;
+  padding-top: 0%;
   border-top: 1px solid #1e1e1e;
 }
 
 footer.footer h1 {
-  font-size: 3rem;
+  font-size: 8rem;
   margin-bottom: 0.5rem;
 }
 
@@ -148,78 +159,3 @@ footer.footer p {
   font-size: 0.9rem;
   color: #555;
 }
-
-
-
-
-    .nova-form {
-      background-color: #fff;
-      padding: 3rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .nova-form label {
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-      display: block;
-    }
-
-    .nova-form input,
-    .nova-form textarea {
-      border: 1px solid #d1d5db;
-      border-radius: 5px;
-      width: 100%;
-      padding: 0.5rem;
-    }
-
-    .nova-form button {
-      border: 1px solid #000;
-      background-color: transparent;
-      color: #000;
-      font-weight: bold;
-      padding: 0.75rem 2rem;
-      transition: background-color 0.3s ease;
-    }
-
-    .nova-form button:hover {
-      background-color: #000;
-      color: #fff;
-    }
-
-    footer {
-      background-color: #fff;
-      padding: 2rem 1rem;
-      margin-top: 5rem;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    footer h2 {
-      font-size: 1.25rem;
-      font-weight: bold;
-    }
-
-    footer ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    footer a {
-      color: #1f2937;
-      text-decoration: none;
-    }
-
-    .map-responsive {
-      overflow: hidden;
-      padding-bottom: 56.25%;
-      position: relative;
-      height: 0;
-    }
-
-    .map-responsive iframe {
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-    }
