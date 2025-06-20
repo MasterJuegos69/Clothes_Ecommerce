@@ -1,43 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="prueba.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaTienda - Carrito de Compras</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/estilos-Index.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
 </head>
 <body>
- <footer>
-  <section>
-    <h3>Acerca de NovaTienda</h3>
-    <p>En NovaTienda creemos que la moda es una forma de expresión personal. Ofrecemos ropa con estilo, calidad y compromiso, para que cada cliente se sienta auténtico y seguro al vestir.</p>
-  </section>
+  <header class="border-bottom py-3">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between">
+      <div class="d-flex align-items-center mb-2 mb-lg-0">
+        <img src="assets/img/logo.jpg" width="120" height="120" alt="NovaTienda Logo" />
+      </div>
+      <nav class="mb-2 mb-lg-0 flex-grow-1 d-none d-md-block">
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a href="index.html" class="nav-link px-3 fw-bold">Inicio</a></li>
+          <li class="nav-item"><a href="productos.html" class="nav-link px-3 fw-bold">Productos</a></li>
+          <li class="nav-item"><a href="compras.html" class="nav-link px-3 fw-bold">Compras</a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link px-3 fw-bold">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+      <div class="dropdown mb-2 mb-lg-0" style="padding-right: 10px;">
+        <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">☰</a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+          <li><a class="dropdown-item" href="register.html">Registrarse</a></li>
+          <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+          <li><a class="dropdown-item" href="acercade.html">Acerca de Nosotros</a></li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center gap-3 mb-2 mb-lg-0" style="min-width: 250px;">
+        <div class="input-group input-group-sm flex-grow-1">
+          <span class="input-group-text bg-white border-end-0"><i class="fas fa-search"></i></span>
+          <input type="text" class="form-control border-start-0" placeholder="Buscar" />
+        </div>
+        <a href="compras.html" class="text-dark fs-4 position-relative" title="Carrito de Compras">
+		  <i class="fas fa-shopping-cart"></i>
+		  <span id="contador-carrito-icono" 
+				style="position: absolute; top: -8px; right: -8px; 
+					   background: red; color: white; border-radius: 50%; 
+					   padding: 2px 6px; font-size: 12px; font-weight: bold;">
+			0
+		  </span>
+		</a>
+        <a href="login.html" class="text-dark fs-4" title="Usuario"><i class="fas fa-user"></i></a>
+      </div>
+    </div>
+  </header>
+  
+	<section class="container my-5">
+		<div class="row justify-content-center">
+			<div class="col-md-8 bg-white p-4 rounded shadow-sm">
+				<h2 class="mb-4 text-center" style="color: #2E2B26; font-weight: 700;">Acerca de NovaTienda</h2>
+				<p class="lead text-center" style="color: #3B3A36; font-size: 1.1rem;">
+			En					<strong>NovaTienda</strong>creemos que la moda es una forma de expresión personal.
+			Ofrecemos ropa con estilo, calidad y compromiso, para que cada cliente se sienta auténtico y seguro al vestir.
+				</p>
+				<hr style="border-top: 2px solid #CFA375; width: 50px; margin: 1.5rem auto;"/>
+				<h3 class="mb-3" style="color: #2E2B26;">Contáctanos</h3>
+				<ul class="list-unstyled fs-5">
+					<li><strong>Teléfono:</strong><a href="tel:+573123456789">+57 312 345 6789</a></li>
+					<li><strong>Email:</strong><a href="mailto:contacto@novatienda.com">contacto@novatienda.com</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
 
-  <section>
-    <h4>Contáctanos</h4>
-    <p>Teléfono: +57 312 345 6789</p>
-    <p>Email: contacto@novatienda.com</p>
-  </section>
+	<footer class="bg-white text-center py-5">
+    <div class="container">
+      <h2 class="mb-4 fw-bold">NovaTienda</h2>
+      <p class="mb-4">Moda con estilo para cada ocasión. Encuentra tu look ideal con nosotros.</p>
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-3">
+          <h5 class="fw-bold">Contacto</h5>
+          <ul class="list-unstyled">
+            <li>Bogotá, Colombia</li>
+            <li><a href="tel:057-320-202-02-02">057-320-202-02-02</a></li>
+            <li><a href="mailto:info@novatienda.com">info@novatienda.com</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="fw-bold">Categorías</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Hombres</a></li>
+            <li><a href="#">Mujeres</a></li>
+            <li><a href="#">Niños</a></li>
+            <li><a href="#">Accesorios</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="fw-bold">Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="compras.html">Compras</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mb-4">
+        <h5 class="fw-bold">Síguenos</h5>
+        <a href="https://facebook.com/" class="mx-2">Facebook</a>
+        <a href="https://instagram.com/" class="mx-2">Instagram</a>
+        <a href="https://twitter.com/" class="mx-2">Twitter</a>
+      </div>
+      <div class="text-muted small">&copy; 2025 NovaTienda. Todos los derechos reservados.</div>
+    </div>
+  </footer>
 
-  <section>
-    <h4>Síguenos en nuestras redes sociales</h4>
-    <ul>
-      <li><a href="https://www.facebook.com/novatienda" target="_blank">Facebook</a></li>
-      <li><a href="https://www.instagram.com/novatienda" target="_blank">Instagram</a></li>
-      <li><a href="https://www.twitter.com/novatienda" target="_blank">Twitter</a></li>
-    </ul>
-  </section>
-
-  <section>
-    <h4>Políticas</h4>
-    <ul>
-      <li><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
-      <li><a href="terminos-y-condiciones.html">Términos y Condiciones</a></li>
-      <li><a href="politica-de-devoluciones.html">Política de Devoluciones</a></li>
-    </ul>
-  </section>
-
-  <p>&copy; 2025 NovaTienda. Todos los derechos reservados.</p>
-</footer>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/carrito.js"></script>
 </body>
 </html>

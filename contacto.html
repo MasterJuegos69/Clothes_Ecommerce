@@ -2,36 +2,60 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NovaTienda - Contacto</title>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/estilos-Index.css">
-
+  <link rel="stylesheet" href="assets/css/estilos-Index.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
 </head>
 <body>
-  <header>
-    <div class="logo"><img src="assets/img/logo.jpg" width="150" height="150"> </div>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="#productos">Productos</a>
-      <a href="#carrito">Carrito</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="register.html" id = "registro">Registrarse</a>
-      <a href="login.html">Iniciar sesión</a>
-      <div class="dropdown">
-        <a href="#">☰</a>
-        <div class="dropdown-menu">
-          <a href="index.html">Inicio</a>
-          <a href="#bienvenida">Te damos la bienvenida</a>
-          <a href="#tienda">Tienda</a>
-          <a href="https://instagram.com">Instagram</a>
-          <a href="#promocion">Promoción</a>
-          <a href="acercade.html" >Acerca de Nosotros</a>
-        </div>
+  <header class="border-bottom py-3">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between">
+      <div class="d-flex align-items-center mb-2 mb-lg-0">
+        <img src="assets/img/logo.jpg" width="120" height="120" alt="NovaTienda Logo" />
       </div>
-    </nav>
-  </header>
 
+      <nav class="mb-2 mb-lg-0 flex-grow-1 d-none d-md-block">
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a href="index.html" class="nav-link px-3 fw-bold">Inicio</a></li>
+          <li class="nav-item"><a href="productos.html" class="nav-link px-3 fw-bold">Productos</a></li>
+          <li class="nav-item"><a href="compras.html" class="nav-link px-3 fw-bold">Compras</a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link px-3 fw-bold">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+
+      <div class="dropdown mb-2 mb-lg-0" style="padding-right: 10px;">
+        <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          ☰
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+          <li><a class="dropdown-item" href="register.html">Registrarse</a></li>
+          <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+          <li><a class="dropdown-item" href="acercade.html">Acerca de Nosotros</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex align-items-center gap-3 mb-2 mb-lg-0" style="min-width: 250px;">
+        <div class="input-group input-group-sm flex-grow-1">
+          <span class="input-group-text bg-white border-end-0"><i class="fas fa-search"></i></span>
+          <input type="text" class="form-control border-start-0" placeholder="Buscar" />
+        </div>
+        <a href="compras.html" class="text-dark fs-4 position-relative" title="Carrito de Compras">
+		  <i class="fas fa-shopping-cart"></i>
+		  <span id="contador-carrito-icono" 
+				style="position: absolute; top: -8px; right: -8px; 
+					   background: red; color: white; border-radius: 50%; 
+					   padding: 2px 6px; font-size: 12px; font-weight: bold;">
+			0
+		  </span>
+		</a>
+        <a href="login.html" class="text-dark fs-4" title="Usuario">
+          <i class="fas fa-user"></i>
+        </a>
+      </div>
+    </div>
+  </header>
 
   <header class="text-center py-4">
     <h1 class="display-4 fw-bold">Contáctanos</h1>
@@ -43,18 +67,18 @@
       <form class="col-md-8 nova-form" method="post">
         <div class="mb-3">
           <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" required />
+          <input type="text" id="nombre" name="nombre" required/>
         </div>
         <div class="mb-3">
           <label for="email">Correo Electrónico</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" required/>
         </div>
         <div class="mb-3">
           <label for="mensaje">Mensaje</label>
           <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
         </div>
         <div class="text-end">
-          <button type="submit">Enviar</button>
+          <button type="submit" class="btn btn-dark">Enviar</button>
         </div>
       </form>
     </div>
@@ -67,60 +91,49 @@
     </div>
   </section>
 
-  
-<footer class="bg-white text-center py-5">
-  <div class="container">
-    <h2 class="mb-4 fw-bold">NovaTienda</h2>
-    <p class="mb-4">Moda con estilo para cada ocasión. Encuentra tu look ideal con nosotros.</p>
-
-    <div class="row justify-content-center mb-4">
-      <div class="col-md-3">
-        <h5 class="fw-bold">Contacto</h5>
-        <ul class="list-unstyled">
-          <li><i class="fas fa-map-marker-alt me-2"></i>Bogotá, Colombia</li>
-          <li><i class="fas fa-phone me-2"></i><a href="tel:057-320-202-02-02">057-320-202-02-02</a></li>
-          <li><i class="fas fa-envelope me-2"></i><a href="mailto:info@novatienda.com">info@novatienda.com</a></li>
-        </ul>
+  <footer class="bg-white text-center py-5">
+    <div class="container">
+      <h2 class="mb-4 fw-bold">NovaTienda</h2>
+      <p class="mb-4">Moda con estilo para cada ocasión. Encuentra tu look ideal con nosotros.</p>
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-3">
+          <h5 class="fw-bold">Contacto</h5>
+          <ul class="list-unstyled">
+            <li>Bogotá, Colombia</li>
+            <li><a href="tel:057-320-202-02-02">057-320-202-02-02</a></li>
+            <li><a href="mailto:info@novatienda.com">info@novatienda.com</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="fw-bold">Categorías</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Hombres</a></li>
+            <li><a href="#">Mujeres</a></li>
+            <li><a href="#">Niños</a></li>
+            <li><a href="#">Accesorios</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="fw-bold">Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="compras.html">Compras</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="col-md-3">
-        <h5 class="fw-bold">Productos</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">Sombreros</a></li>
-          <li><a href="#">Hamacas</a></li>
-          <li><a href="#">Platería</a></li>
-          <li><a href="#">Decoración</a></li>
-        </ul>
+      <div class="mb-4">
+        <h5 class="fw-bold">Síguenos</h5>
+        <a href="https://facebook.com/" class="mx-2">Facebook</a>
+        <a href="https://instagram.com/" class="mx-2">Instagram</a>
+        <a href="https://twitter.com/" class="mx-2">Twitter</a>
       </div>
-      <div class="col-md-3">
-        <h5 class="fw-bold">Navegación</h5>
-        <ul class="list-unstyled">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="acercade.html">Acerca de</a></li>
-          <li><a href="compras.html">Compras</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
+      <div class="text-muted small">&copy; 2025 NovaTienda. Todos los derechos reservados.</div>
     </div>
-
-    <div class="mb-4">
-      <h5 class="fw-bold">Síguenos</h5>
-      <a class="text-dark mx-2" href="https://facebook.com/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
-      <a class="text-dark mx-2" href="https://instagram.com/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
-      <a class="text-dark mx-2" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
-      <a class="text-dark mx-2" href="https://pinterest.com/" target="_blank"><i class="fab fa-pinterest fa-lg"></i></a>
-    </div>
-
-    <div class="text-muted small">
-      &copy; 2025 NovaTienda. Todos los derechos reservados.
-    </div>
-  </div>
-</footer>
+  </footer>
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/jquery-1.11.0.min.js"></script>
-  <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-  <script src="assets/js/templatemo.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/carrito.js"></script>
 </body>
 </html>

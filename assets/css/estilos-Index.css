@@ -223,3 +223,36 @@ footer.footer p {
       width: 100%;
       position: absolute;
     }
+
+
+.carrito-footer {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: #fff3cd;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ffeeba;
+}
+
+.carrito-footer h4 {
+  margin: 0;
+  font-weight: 700;
+  color: #856404;
+  flex-grow: 1;
+}
+
+.carrito-footer button {
+  min-width: 140px;
+}
+
+.contadores {
+  color: #856404;
+  font-weight: 600;
+  min-width: 200px;
+  text-align: right;
+  font-size: 0.9rem;
+}
